@@ -1,11 +1,13 @@
 #ifndef TVECTORPORO_H
 #define TVECTORPORO_H
 #include"tporo.h"
+#include<stdlib.h>
 
 class TVectorPoro{
 // Dimension del vector
 private:
-	void Copia(TVectorPoro &);
+	//copiara todo el objeto excepto el error que hay que hacer lo manualmente
+	void Copia(TVectorPoro const &);
 	// dimension del vector
 	int dimension;
 
@@ -22,7 +24,7 @@ public:
 	TVectorPoro(int);
 
 	// Constructor de copia
-	TVectorPoro(TVectorPoro &);
+	TVectorPoro(TVectorPoro const &);
 
 	// Destructor
 	~TVectorPoro();
@@ -43,13 +45,13 @@ public:
 	TPoro operator[](int) const;
 
 	// Devuelve la longitud (dimensión) del vector
-	int Longitud();
+	int Longitud(){return dimension;}
 
 	// Devuelve la cantidad de posiciones ocupadas (no vacías) en el vector
 	int Cantidad();
 
 	// REDIMENSIONAR el vector de TPoro
-	bool Redimensionar(int);
+	bool Redimensionar(int n);
 
 	// Sobrecarga del operador salida
 	friend ostream & operator<<(ostream &, TVectorPoro &);

@@ -28,7 +28,7 @@ class TPoro {
 		//pasa color a minusculas
 		void Color1(char*)const;
 
-		void Copiar(TPoro &) const;
+		void Copiar(TPoro const &);
 	public:
 		// Constructor por defecto
 		TPoro();
@@ -37,7 +37,7 @@ class TPoro {
 		// Constructor a partir de una posición, un volumen y un color
 		TPoro(int, int, double, char *);
 		// Constructor de copia
-		TPoro(TPoro &) const;
+		TPoro(TPoro const &);
 		// Destructor
 		~TPoro();
 

@@ -6,7 +6,7 @@
  */
 #include "tporo.h"
 
-void TPoro::Copiar(TPoro &poroX) const
+void TPoro::Copiar(TPoro const &poroX)
 {
 	x=poroX.x;
 	y=poroX.y;
@@ -51,7 +51,7 @@ TPoro::TPoro(int x,int y,double vol,char* col)
 		this->color=NULL;
 	}
 }
-TPoro::TPoro(TPoro &poroX) const //Preguntar// Multiple markers
+TPoro::TPoro(TPoro const &poroX) //Preguntar// Multiple markers
 {
 	Copiar(poroX);
 }
