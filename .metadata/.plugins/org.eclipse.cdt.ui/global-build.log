@@ -1,0 +1,3 @@
+12:39:52 **** Incremental Build of configuration Default for project poros-master ****
+make all 
+make: *** No rule to make target 'all'.  Alto.

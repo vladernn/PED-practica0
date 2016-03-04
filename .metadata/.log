@@ -1,0 +1,55 @@
+!SESSION 2016-02-20 18:02:35.636 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_66-internal
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.core.resources 4 77 2016-02-20 18:04:03.677
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2016-02-20 18:04:03.677
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2016-02-20 18:04:03.678
+!MESSAGE /home/vladernn/workspace/poros-master overlaps the location of another project: 'poros-master'
+
+!ENTRY org.eclipse.cdt.core 1 0 2016-02-20 18:09:06.419
+!MESSAGE Indexed 'poro' (1 sources, 1 headers) in 0,644 sec: 62 declarations; 120 references; 5 unresolved inclusions; 0 syntax errors; 20 unresolved names (9,9 %)
+!SESSION 2016-03-01 18:38:12.311 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_66-internal
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.cdt.ui 4 0 2016-03-01 18:38:29.060
+!MESSAGE Error in CDT UI during reconcile
+!STACK 1
+C Model Exception: C Model Status [Element TPoro.cpp does not exist.]
+	at org.eclipse.cdt.internal.core.model.CElement.newNotPresentException(CElement.java:484)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.makeConsistent(TranslationUnit.java:573)
+	at org.eclipse.cdt.internal.core.model.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:62)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.execute(CModelOperation.java:341)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.run(CModelOperation.java:607)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.runOperation(CModelOperation.java:635)
+	at org.eclipse.cdt.internal.core.model.WorkingCopy.reconcile(WorkingCopy.java:362)
+	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.reconcile(CReconcilingStrategy.java:78)
+	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.reconcile(CReconcilingStrategy.java:63)
+	at org.eclipse.cdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:87)
+	at org.eclipse.cdt.internal.ui.text.CCompositeReconcilingStrategy.reconcile(CCompositeReconcilingStrategy.java:90)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:77)
+	at org.eclipse.cdt.internal.ui.text.CReconciler.process(CReconciler.java:349)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+!SUBENTRY 1 org.eclipse.cdt.core 4 969 2016-03-01 18:38:29.093
+!MESSAGE Element TPoro.cpp does not exist.
+!SESSION 2016-03-02 23:23:51.210 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_66-internal
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.cdt.core 1 0 2016-03-02 23:26:37.618
+!MESSAGE Indexed 'poros-master' (3 sources, 127 headers) in 6,13 sec: 9.694 declarations; 16.269 references; 0 unresolved inclusions; 6 syntax errors; 12 unresolved names (0,046 %)

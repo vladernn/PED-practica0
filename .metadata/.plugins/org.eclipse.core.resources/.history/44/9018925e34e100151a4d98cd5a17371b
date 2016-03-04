@@ -1,0 +1,12 @@
+#include<iostream>
+#include"tvectorporo.h"
+using namespace std;
+
+TVectorPoro::TVectorPoro()
+{
+	this->dimension=0;
+	this->datos=NULL;
+	this->error=NULL;
+}
+
+

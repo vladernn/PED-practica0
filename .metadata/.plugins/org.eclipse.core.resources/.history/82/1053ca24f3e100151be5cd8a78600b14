@@ -1,0 +1,35 @@
+#include<iostream>
+#include"tvectorporo.h"
+using namespace std;
+
+void TVectorPoro::Copia()
+{
+
+}
+TVectorPoro::TVectorPoro()
+{
+	this->dimension=0;
+	this->datos=NULL;
+	this->error=NULL;
+}
+
+TVectorPoro::TVectorPoro(int x)
+{
+	if(x<=0)
+	{
+		this->dimension=0;
+		this->datos=NULL;
+		this->error=NULL;
+	}else
+	{
+		this->dimension=x;
+		this->datos=NULL;
+		this->error=NULL;
+	}
+
+}
+TVectorPoro::TVectorPoro(TVectorPoro &suPoro)
+{
+
+}
+
