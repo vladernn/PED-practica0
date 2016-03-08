@@ -2,16 +2,14 @@
 #include"tvectorporo.h"
 using namespace std;
 
-/*friend ostream & operator<<(ostream &, TVectorPoro &)
-{
-
-}*/
-
 void TVectorPoro::Copia(TVectorPoro const &origen)
 {
 	this->dimension=origen.dimension;
-	this->datos=origen.datos;
-	this->error=origen.error;
+	for(int i=0;i<origen.dimension;i++)
+	{
+		this->datos[i]=origen.datos[i];
+	}
+	//this->error=origen.error;
 }
 TVectorPoro::TVectorPoro():error()
 {
@@ -37,9 +35,8 @@ TVectorPoro::TVectorPoro(TVectorPoro const &origen):error(origen.error)
 }
 TVectorPoro::~TVectorPoro()
 {
-	this->datos=NULL;
 	this->dimension=0;
-	this->error;
+	delete[] this->datos;
 }
 TVectorPoro& TVectorPoro::operator=(TVectorPoro &suVector)
 {
@@ -47,7 +44,7 @@ TVectorPoro& TVectorPoro::operator=(TVectorPoro &suVector)
 	{
 		(*this).~TVectorPoro();
 		Copia(suVector);
-		this->error;
+		this->error=suVector.error;
 	}
 	return *this;
 }
@@ -116,18 +113,37 @@ int TVectorPoro::Cantidad()
 
 bool TVectorPoro::Redimensionar(int n)
 {
-	if(this->dimension==n or n<=0)
+	bool devolver =false;
+	TVectorPoro auxiliar;
+
+	if(n>0 and n!=this->dimension)
 	{
-		return false;
-	}else if(n < this->dimension){
-		for(int i=0;i<this->dimension;i++)
+		auxiliar= new TVectorPoro(*this);
+		this->dimension=n;
+		delete[] this->datos;
+		for(int i=0;i<n;i++)
 		{
-			if(i<n)
-			{
-				//this->datos[i].Copiar();
-			}
+			this->datos[i].Copiar(auxiliar.datos[i]);
 		}
+		delete[] auxiliar;
+		devolver=true;
+	}
+	return devolver;
+}
+
+ostream & operator<<(ostream &os,TVectorPoro &vector)
+{
+	if(vector.esVacio())
+	{
+		os<<"[]";
 	}else
 	{
-		this->dimension=n;return true;}
+		os<<"[";
+		for(int i=0;i<vector.dimension;i++)
+		{
+			os<<vector.datos[i];
+		}
+		os<<"]";
+	}
+	return os;
 }
