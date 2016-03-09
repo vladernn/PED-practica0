@@ -19,7 +19,7 @@ private:
 		}
 	}
 	//copiara todo el objeto excepto el error que hay que hacer lo manualmente
-	void Copia(TVectorPoro const &);
+	void Copia( const TVectorPoro & );
 	// dimension del vector
 	int dimension;
 

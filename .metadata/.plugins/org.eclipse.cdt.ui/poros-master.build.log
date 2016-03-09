@@ -1,6 +1,6 @@
-20:43:05 **** Incremental Build of configuration Default for project poros-master ****
+12:39:05 **** Incremental Build of configuration Default for project poros-master ****
 make all 
-make: *** No rule to make target 'all'.  Alto.
+make: Nothing to be done for 'all'.
 
-20:43:06 Build Finished (took 90ms)
+12:39:06 Build Finished (took 93ms)
 

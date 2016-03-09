@@ -1,24 +1,6 @@
-12:39:52 **** Incremental Build of configuration Default for project poros-master ****
+12:39:00 **** Incremental Build of configuration Default for project poros-master ****
 make all 
-make: *** No rule to make target 'all'.  Alto.
-19:31:26 **** Incremental Build of configuration Debug for project poro ****
-make all 
-make: Nothing to be done for 'all'.
-19:31:26 **** Incremental Build of configuration Default for project poros-master ****
-make all 
-make: *** No rule to make target 'all'.  Alto.
-20:40:49 **** Incremental Build of configuration Debug for project poro ****
+g++ -g  -Iinclude src/tad.cpp lib/tporo.o lib/tvectorporo.o lib/tlistaporo.o -o tad
+12:39:05 **** Incremental Build of configuration Default for project poros-master ****
 make all 
 make: Nothing to be done for 'all'.
-20:40:50 **** Incremental Build of configuration Default for project poros-master ****
-make all 
-make: *** No rule to make target 'all'.  Alto.
-20:41:55 **** Incremental Build of configuration Default for project poros-master ****
-make all 
-make: *** No rule to make target 'all'.  Alto.
-20:42:31 **** Incremental Build of configuration Default for project poros-master ****
-make all 
-make: *** No rule to make target 'all'.  Alto.
-20:43:05 **** Incremental Build of configuration Default for project poros-master ****
-make all 
-make: *** No rule to make target 'all'.  Alto.
