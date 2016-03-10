@@ -5,7 +5,7 @@
 
 class TVectorPoro{
 	// Sobrecarga del operador salida
-	friend ostream & operator<<(ostream &, TVectorPoro &);
+	friend ostream & operator<<(ostream &, const TVectorPoro &);
 // Dimension del vector
 private:
 	bool esVacio()
@@ -33,37 +33,37 @@ public:
 	TVectorPoro();
 
 	// Constructor a partir de una dimensión
-	TVectorPoro(int);
+	TVectorPoro(const int);
 
 	// Constructor de copia
-	TVectorPoro(TVectorPoro const &);
+	TVectorPoro(const TVectorPoro  &);
 
 	// Destructor
 	~TVectorPoro();
 
 	// Sobrecarga del operador asignación
-	TVectorPoro & operator=(TVectorPoro &);
+	TVectorPoro & operator=(const TVectorPoro &);
 
 	// Sobrecarga del operador igualdad
-	bool operator==(TVectorPoro &);
+	bool operator==(const TVectorPoro &);
 
 	// Sobrecarga del operador desigualdad
-	bool operator!=(TVectorPoro &);
+	bool operator!=(const TVectorPoro &);
 
 	// Sobrecarga del operador corchete (parte IZQUIERDA)
-	TPoro & operator[](int);
+	TPoro & operator[](const int);
 
 	// Sobrecarga del operador corchete (parte DERECHA)
-	TPoro operator[](int) const;
+	TPoro operator[](const int) const;
 
 	// Devuelve la longitud (dimensión) del vector
-	int Longitud(){return dimension;}
+	int Longitud()const {return dimension;}
 
 	// Devuelve la cantidad de posiciones ocupadas (no vacías) en el vector
-	int Cantidad();
+	int Cantidad()const;
 
 	// REDIMENSIONAR el vector de TPoro
-	bool Redimensionar(int n);
+	bool Redimensionar(const int n);
 
 	};
 #endif

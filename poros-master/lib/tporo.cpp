@@ -6,7 +6,7 @@
  */
 #include "tporo.h"
 
-void TPoro::Copiar(TPoro &poroX)
+void TPoro::Copiar(const TPoro &poroX)
 {
 	x=poroX.x;
 	y=poroX.y;
@@ -51,17 +51,18 @@ TPoro::TPoro(int x,int y,double vol,char* col)
 		this->color=NULL;
 	}
 }
-TPoro::TPoro(TPoro  &poroX) //Preguntar// Multiple markers
+TPoro::TPoro(const TPoro  &poroX)
 {
 	Copiar(poroX);
 }
 TPoro::~TPoro()
 {
 		x=y=0;
-		volumen=0;
+		volumen=0.0;
+
 		color=NULL;
 }
-TPoro& TPoro::operator=(TPoro & suPoro)
+TPoro& TPoro::operator=(const TPoro &suPoro)
 {
 	if(this!=&suPoro)
 	{
@@ -70,7 +71,7 @@ TPoro& TPoro::operator=(TPoro & suPoro)
 	}
 	return *this;
 }
-bool TPoro:: operator==(TPoro & suPoro)
+bool TPoro:: operator==(const TPoro & suPoro)
 {
 	bool sonIguales=false;
 	if(suPoro.Color()!=NULL and this->Color()!=NULL)
@@ -91,7 +92,7 @@ bool TPoro:: operator==(TPoro & suPoro)
 		return(false);
 	}
 }
-bool TPoro::operator!=(TPoro & suPoro)
+bool TPoro::operator!=(const 	TPoro & suPoro)
 {
 	if(*this==suPoro)
 	{
@@ -138,7 +139,7 @@ bool TPoro::EsVacio() const
 		return false;
 	}
 }
-void TPoro::Color(char * col)
+void TPoro::Color(char* col)
 {
 	Color1(col);
 }

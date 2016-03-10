@@ -28,7 +28,7 @@ class TPoro {
 		//pasa color a minusculas
 		void Color1(char*);
 
-		void Copiar(TPoro &);
+		void Copiar(const TPoro &);
 	public:
 		// Constructor por defecto
 		TPoro();
@@ -37,30 +37,30 @@ class TPoro {
 		// Constructor a partir de una posición, un volumen y un color
 		TPoro(int, int, double, char *);
 		// Constructor de copia
-		TPoro(TPoro  &);
+		TPoro(const TPoro  &);
 		// Destructor
 		~TPoro();
 
 		// Sobrecarga del operador asignación
-		TPoro & operator=(TPoro &);
+		TPoro & operator=(const TPoro &);
 		// Sobrecarga del operador igualdad
-		bool operator==(TPoro &);
+		bool operator==(const TPoro &);
 		// Sobrecarga del operador desigualdad
-		bool operator!=(TPoro &);
+		bool operator!=(const TPoro &);
 		// Modifica la posición
 		void Posicion(int x, int y){this->x=x;this->y=y;}
 		// Modifica el volumen
 		void Volumen(double vol){volumen=vol;}
 		// Modifica el color
-		void Color(char * col);
+		void Color(char* col);
 		// Devuelve la coordenada x de la posición
-		int PosicionX(){return(x);}
+		int PosicionX()const {return(x);}
 		// Devuelve la coordenada y de la posición
-		int PosicionY(){return(y);}
+		int PosicionY()const {return(y);}
 		// Devuelve el volumen
-		double Volumen(){return(volumen);}
+		double Volumen()const {return(volumen);}
 		// Devuelve el color
-		char *Color(){return(color);}
+		char* Color()const{return(color);}
 		// Devuelve cierto si el poro está vacío
 		bool EsVacio() const;
 		// Sobrecarga del operador SALIDA

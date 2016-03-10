@@ -1,6 +1,25 @@
-12:39:00 **** Incremental Build of configuration Default for project poros-master ****
+19:21:50 **** Incremental Build of configuration Default for project poros-master ****
 make all 
+make: Nothing to be done for 'all'.
+19:23:08 **** Incremental Build of configuration Default for project poros-master ****
+make all 
+make: Nothing to be done for 'all'.
+19:24:19 **** Incremental Build of configuration Default for project poros-master ****
+make all 
+make: Nothing to be done for 'all'.
+19:24:32 **** Incremental Build of configuration Default for project poros-master ****
+make all 
+make: Nothing to be done for 'all'.
+19:27:14 **** Incremental Build of configuration Default for project poros-master ****
+make all 
+make: Nothing to be done for 'all'.
+19:29:19 **** Incremental Build of configuration Default for project poros-master ****
+make all 
+make: Nothing to be done for 'all'.
+19:33:44 **** Incremental Build of configuration Default for project poros-master ****
+make all 
+g++ -g  -c -Iinclude -o lib/tvectorporo.o lib/tvectorporo.cpp
 g++ -g  -Iinclude src/tad.cpp lib/tporo.o lib/tvectorporo.o lib/tlistaporo.o -o tad
-12:39:05 **** Incremental Build of configuration Default for project poros-master ****
+19:33:56 **** Incremental Build of configuration Default for project poros-master ****
 make all 
 make: Nothing to be done for 'all'.
