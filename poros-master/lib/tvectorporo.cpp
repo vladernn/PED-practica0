@@ -5,9 +5,16 @@ using namespace std;
 void TVectorPoro::Copia(const TVectorPoro &origen)
 {
 	this->dimension=origen.dimension;
-	for(int i=0;i<origen.dimension;i++)
+	if(origen.dimension>0)
 	{
-		this->datos[i]=origen.datos[i];
+		this->datos=new TPoro[origen.dimension];
+		for(int i=0;i<origen.dimension;i++)
+		{
+			this->datos[i]=origen.datos[i];
+		}
+	}else
+	{
+		this->datos=NULL;
 	}
 	//this->error=origen.error;
 }
@@ -26,7 +33,7 @@ TVectorPoro::TVectorPoro(int x):error()
 	}else
 	{
 		this->dimension=x;
-		this->datos=NULL;
+		this->datos=new TPoro[x];
 	}
 }
 TVectorPoro::TVectorPoro(TVectorPoro const &origen)
@@ -79,15 +86,15 @@ bool TVectorPoro::operator !=(const TVectorPoro &suVector)
 // Sobrecarga del operador corchete (parte IZQUIERDA)
 TPoro& TVectorPoro::operator [](const int pos)
 {
-	TPoro *vacio=NULL;
+	TPoro vacio;
 	if(this->dimension >=pos and pos>0)
 	{
-		vacio = &datos[pos-1];
+		return datos[pos-1];
 	}else
 	{
-		vacio=&error;
+		return error;
 	}
-	return *vacio;
+	//return *vacio;
 }
 // Sobrecarga del operador corchete (parte DERECHA)
 TPoro TVectorPoro::operator [](const int pos)const
@@ -142,7 +149,12 @@ ostream & operator<<(ostream &os,const TVectorPoro &vector)
 		os<<"[";
 		for(int i=0;i<vector.dimension;i++)
 		{
-			os<<vector.datos[i];
+			os<<i+1<<" ";
+			os<< vector.datos[i];
+			if(i<vector.dimension - 1)
+			{
+				os<<" ";
+			}
 		}
 		os<<"]";
 

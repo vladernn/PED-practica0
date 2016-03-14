@@ -1,0 +1,28 @@
+#include<iostream>
+#include"tlistaporo.h"
+using namespace std;
+
+TListaNodo::TListaNodo()
+{
+		this->e=NULL;
+		this->anterior=NULL;
+		this->siguiente=NULL;
+}
+TListaNodo::TListaNodo(TListaNodo & miNodo)
+{
+
+}
+TListaNodo& TListaNodo::operator =(TListaNodo & miNodo)
+{
+
+}
+TListaNodo::~TListaNodo()
+{
+	if(this->e != NULL)
+	{
+		delete[] e;
+	}
+
+	this->anterior=NULL;
+	this->siguiente=NULL;
+}

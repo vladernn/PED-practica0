@@ -1,0 +1,35 @@
+#include<iostream>
+#include"tlistaporo.h"
+using namespace std;
+
+void TListaNodo::Copiar(const TListaNodo & miNodo)
+{
+	this->e=miNodo.e;
+	this->anterior=miNodo.anterior;
+	this->siguiente=miNodo.siguiente;
+}
+
+TListaNodo::TListaNodo()
+{
+		this->e=NULL;
+		this->anterior=NULL;
+		this->siguiente=NULL;
+}
+TListaNodo::TListaNodo(const TListaNodo & miNodo)
+{
+	Copia(miNodo);
+}
+TListaNodo& TListaNodo::operator = (const TListaNodo & miNodo)
+{
+
+}
+TListaNodo::~TListaNodo()
+{
+	if(this->e != NULL)
+	{
+		delete[] e;
+	}
+
+	this->anterior=NULL;
+	this->siguiente=NULL;
+}

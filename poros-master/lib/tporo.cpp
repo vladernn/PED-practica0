@@ -60,6 +60,9 @@ TPoro::~TPoro()
 		x=y=0;
 		volumen=0.0;
 
+		if(color!=NULL)
+			delete color;
+
 		color=NULL;
 }
 TPoro& TPoro::operator=(const TPoro &suPoro)
