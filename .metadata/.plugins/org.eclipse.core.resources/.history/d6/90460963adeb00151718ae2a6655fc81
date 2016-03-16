@@ -114,7 +114,7 @@ TListaPoro::~TListaPoro()
 
 TListaPoro& TListaPoro::operator=(TListaPoro & lista)
 {
-	return TListaPoro();
+	return TListaPoro;
 }
 bool TListaPoro::operator ==(TListaPoro & lista)
 {
@@ -146,12 +146,12 @@ bool TListaPoro::operator ==(TListaPoro & lista)
 }
 TListaPoro TListaPoro::operator +(TListaPoro & lista)
 {
-	return TListaPoro();
+	return TListaPoro;
 }
 TListaPoro TListaPoro::operator-(TListaPoro &)
 {
 
-	return TListaPoro();
+	return TListaPoro;
 }
 bool TListaPoro::EsVacia()
 {
@@ -171,7 +171,7 @@ bool TListaPoro::Borrar(TListaPosicion &poro)
 }
 TPoro TListaPoro::Obtener(TListaPosicion &posicion)
 {
-	return TPoro();
+	return TPoro;
 }
 bool TListaPoro::Buscar(TPoro &)
 {
@@ -191,13 +191,13 @@ int TListaPoro::Longitud()const
 }
 TListaPosicion TListaPoro::Primera()
 {
-	return TListaPosicion();
+	return TListaPosicion;
 }
 TListaPosicion TListaPoro::Ultima()
 {
-	return TListaPosicion();
+	return TListaPosicion;
 }
 TListaPoro TListaPoro::ExtraerRango (int n1, int n2)
 {
-	return TListaPoro();
+	return TListaPoro;
 }

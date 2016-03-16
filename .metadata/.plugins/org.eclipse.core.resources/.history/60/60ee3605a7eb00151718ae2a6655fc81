@@ -111,7 +111,7 @@ class TListaPoro
 		bool Buscar(TPoro &);
 
 		// Devuelve la longitud de la lista
-		int Longitud()const;
+		int Longitud();
 
 		// Devuelve la primera posición en la lista
 		TListaPosicion Primera();

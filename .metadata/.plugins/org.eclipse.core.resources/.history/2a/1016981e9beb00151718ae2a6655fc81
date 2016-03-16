@@ -98,106 +98,25 @@ TListaPoro::~TListaPoro()
 {
 	if(this!=NULL)
 	{
-		TListaNodo *aux0;
-		TListaNodo *aux1;
-		aux0=this->primero;
-		while(aux0!=NULL)
-		{
-			aux1=aux0;
-			aux0=aux0->siguiente;
-			delete [] aux1;
-		}
 		this->primero=NULL;
 		this->ultimo=NULL;
 	}
 }
 
-TListaPoro& TListaPoro::operator=(TListaPoro & lista)
+TListaPoro& TListaPoro::operator =(TListaPoro & lista)
 {
-	return TListaPoro();
+
 }
 bool TListaPoro::operator ==(TListaPoro & lista)
 {
-	TListaNodo *aux0;
-	TListaNodo *aux1;
-	aux0=this->primero;
-	aux1=lista.primero;
-	int a=this->Longitud(),b=lista.Longitud();
-	bool devuelvo;
-	if(a!=b)
-	{
-		devuelvo=false;
-	}else
-	{
-		devuelvo=true;
-		while(aux0!=NULL and devuelvo==true)
-		{
-			if(aux0->e==aux1->e)
-			{
-				aux0=aux0->siguiente;
-				aux1=aux1->siguiente;
-			}else
-			{
-				devuelvo=false;
-			}
-		}
-	}
-	return devuelvo;
+
 }
 TListaPoro TListaPoro::operator +(TListaPoro & lista)
 {
-	return TListaPoro();
+
 }
-TListaPoro TListaPoro::operator-(TListaPoro &)
+TListaPoro TListaPoro::operator -(TlistaPoro & lista)
 {
 
-	return TListaPoro();
 }
-bool TListaPoro::EsVacia()
-{
-	return true;
-}
-bool TListaPoro::Insertar(TPoro &poro)
-{
-	return true;
-}
-bool TListaPoro::Borrar(TPoro &poro)
-{
-		return true;
-}
-bool TListaPoro::Borrar(TListaPosicion &poro)
-{
-		return true;
-}
-TPoro TListaPoro::Obtener(TListaPosicion &posicion)
-{
-	return TPoro();
-}
-bool TListaPoro::Buscar(TPoro &)
-{
-	return true;
-}
-int TListaPoro::Longitud()const
-{
-	TListaNodo *aux0;
-	aux0=this->primero;
-	int cont=0;
-	while(aux0!=NULL)
-	{
-		aux0=aux0->siguiente;
-		cont++;
-	}
-	return cont;
-}
-TListaPosicion TListaPoro::Primera()
-{
-	return TListaPosicion();
-}
-TListaPosicion TListaPoro::Ultima()
-{
-	return TListaPosicion();
-}
-TListaPoro TListaPoro::ExtraerRango (int n1, int n2)
-{
-	return TListaPoro();
-}
+
