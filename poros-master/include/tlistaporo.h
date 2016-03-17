@@ -3,6 +3,8 @@
 #define TPORO_H_
 
 class TListaNodo{
+	friend class TListaPoro;
+	friend class TListaPosicion;
 // El elemento del nodo
 private:
 	TPoro e;
@@ -30,6 +32,7 @@ public:
 };
 class TListaPosicion
 {
+	friend class TListaPoro;
 	private:
 		// Para implementar la POSICIÓN a NODO de la LISTA de TPoro
 		TListaNodo *pos;
@@ -38,7 +41,7 @@ class TListaPosicion
 		TListaPosicion ();
 
 		// Constructor de copia
-		TListaPosicion (const TListaPosicion &);
+		TListaPosicion (TListaPosicion &);
 
 		// Destructor
 		~TListaPosicion ();
@@ -93,7 +96,7 @@ class TListaPoro
 		TListaPoro operator-(TListaPoro &);
 
 		// Devuelve true si la lista está vacía, false en caso contrario
-		bool EsVacia();
+		bool EsVacia()const;
 
 		// Inserta el elemento en la lista
 		bool Insertar(TPoro &);
@@ -114,10 +117,10 @@ class TListaPoro
 		int Longitud()const;
 
 		// Devuelve la primera posición en la lista
-		TListaPosicion Primera();
+		TListaPosicion Primera()const;
 
 		// Devuelve la última posición en la lista
-		TListaPosicion Ultima();
+		TListaPosicion Ultima()const;
 
 		// Extraer un rango de nodos de la lista
 		TListaPoro ExtraerRango (int n1, int n2);

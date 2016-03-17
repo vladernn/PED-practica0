@@ -13,8 +13,14 @@ void TPoro::Copiar(const TPoro &poroX)
 	volumen=poroX.volumen;
 	if(poroX.EsVacio()==false)
 	{
-		this->color=new char[strlen( poroX.color)+1];
-		this->Color1(poroX.color);
+		//this->color=new char[strlen( poroX.color)+1];
+		if(poroX.color!=NULL)
+		{
+			this->Color1(poroX.color);
+		}else
+		{
+			this->color=NULL;
+		}
 
 	}else
 	{
@@ -105,9 +111,10 @@ bool TPoro::operator!=(const 	TPoro & suPoro)
 		return(true);
 	}
 }
-void TPoro::Color1(char* col)
+void TPoro::Color1(char *col)
 {
-	char aux[strlen(col)+1];
+	this->color=new char[strlen(col)+1];
+	char aux[strlen(this->color)];
 	char c;
 	unsigned int i=0;
 	if(this->color!=NULL)

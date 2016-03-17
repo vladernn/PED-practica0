@@ -1,6 +1,12 @@
-14:27:53 **** Incremental Build of configuration Default for project poros-master ****
+20:50:30 **** Incremental Build of configuration Default for project poros-master ****
 make all 
-make: Nothing to be done for 'all'.
+g++ -g  -c -Iinclude -o lib/tlistaporo.o lib/tlistaporo.cpp
+lib/tlistaporo.cpp: In destructor ‘TListaNodo::~TListaNodo()’:
+lib/tlistaporo.cpp:30:12: error: type ‘class TPoro’ argument given to ‘delete’, expected pointer
+  delete [] e;
+            ^
+make: *** [lib/tlistaporo.o] Error 1
+Makefile:12: recipe for target 'lib/tlistaporo.o' failed
 
-14:27:53 Build Finished (took 104ms)
+20:50:31 Build Finished (took 342ms)
 

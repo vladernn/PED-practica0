@@ -1,6 +1,6 @@
-14:27:46 **** Incremental Build of configuration Debug for project poro ****
+18:50:26 **** Incremental Build of configuration Debug for project poro ****
 make all 
 make: Nothing to be done for 'all'.
 
-14:27:46 Build Finished (took 108ms)
+18:50:26 Build Finished (took 91ms)
 
