@@ -30,6 +30,7 @@ TListaNodo::~TListaNodo()
 		this->anterior=NULL;
 		this->siguiente=NULL;
 	}
+
 }
 
 TListaPosicion::TListaPosicion()

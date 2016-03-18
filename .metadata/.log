@@ -308,3 +308,130 @@ Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp
 !MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.mi.service.MIRunControl$9@1e3e7968): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Context cannot be suspended. null' resulted in an error.
 !SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2016-03-17 20:56:03.432
 !MESSAGE Context cannot be suspended.
+!SESSION 2016-03-18 10:02:02.011 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_66-internal
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2016-03-18 11:27:34.705
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.debug.ui.viewmodel.SteppingController$3@4657899a): Status ERROR: org.eclipse.cdt.dsf.gdb code=10004 Failed to execute MI command:
+-exec-step 1
+Error message from debugger back end:
+No se pueden encontrar límites en la función actual java.lang.Exception: No se pueden encontrar límites en la función actual' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2016-03-18 11:27:34.705
+!MESSAGE Failed to execute MI command:
+-exec-step 1
+Error message from debugger back end:
+No se pueden encontrar límites en la función actual
+!STACK 0
+java.lang.Exception: No se pueden encontrar límites en la función actual
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:927)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:756)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2016-03-18 11:27:43.096
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.debug.ui.viewmodel.SteppingController$3@e6f62a4): Status ERROR: org.eclipse.cdt.dsf.gdb code=10004 Failed to execute MI command:
+-exec-step 1
+Error message from debugger back end:
+No se pueden encontrar límites en la función actual java.lang.Exception: No se pueden encontrar límites en la función actual' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2016-03-18 11:27:43.096
+!MESSAGE Failed to execute MI command:
+-exec-step 1
+Error message from debugger back end:
+No se pueden encontrar límites en la función actual
+!STACK 0
+java.lang.Exception: No se pueden encontrar límites en la función actual
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:927)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:756)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2016-03-18 11:29:31.061
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.debug.ui.viewmodel.SteppingController$3@71030048): Status ERROR: org.eclipse.cdt.dsf.gdb code=10004 Failed to execute MI command:
+-exec-next 1
+Error message from debugger back end:
+No se pueden encontrar límites en la función actual java.lang.Exception: No se pueden encontrar límites en la función actual' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2016-03-18 11:29:31.062
+!MESSAGE Failed to execute MI command:
+-exec-next 1
+Error message from debugger back end:
+No se pueden encontrar límites en la función actual
+!STACK 0
+java.lang.Exception: No se pueden encontrar límites en la función actual
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:927)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:756)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2016-03-18 11:29:34.069
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.debug.ui.viewmodel.SteppingController$3@108125a): Status ERROR: org.eclipse.cdt.dsf.gdb code=10004 Failed to execute MI command:
+-exec-next 1
+Error message from debugger back end:
+No se pueden encontrar límites en la función actual java.lang.Exception: No se pueden encontrar límites en la función actual' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2016-03-18 11:29:34.069
+!MESSAGE Failed to execute MI command:
+-exec-next 1
+Error message from debugger back end:
+No se pueden encontrar límites en la función actual
+!STACK 0
+java.lang.Exception: No se pueden encontrar límites en la función actual
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:927)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:756)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2016-03-18 12:05:54.916
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.debug.ui.viewmodel.SteppingController$3@488abf21): Status ERROR: org.eclipse.cdt.dsf.gdb code=10004 Failed to execute MI command:
+-exec-step 1
+Error message from debugger back end:
+No se pueden encontrar límites en la función actual java.lang.Exception: No se pueden encontrar límites en la función actual' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2016-03-18 12:05:54.916
+!MESSAGE Failed to execute MI command:
+-exec-step 1
+Error message from debugger back end:
+No se pueden encontrar límites en la función actual
+!STACK 0
+java.lang.Exception: No se pueden encontrar límites en la función actual
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:927)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:756)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2016-03-18 12:05:58.268
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.debug.ui.viewmodel.SteppingController$3@58b207de): Status ERROR: org.eclipse.cdt.dsf.gdb code=10004 Failed to execute MI command:
+-exec-step 1
+Error message from debugger back end:
+No se pueden encontrar límites en la función actual java.lang.Exception: No se pueden encontrar límites en la función actual' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2016-03-18 12:05:58.269
+!MESSAGE Failed to execute MI command:
+-exec-step 1
+Error message from debugger back end:
+No se pueden encontrar límites en la función actual
+!STACK 0
+java.lang.Exception: No se pueden encontrar límites en la función actual
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:927)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:756)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2016-03-18 12:16:33.847
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.debug.ui.viewmodel.SteppingController$3@6929d1c8): Status ERROR: org.eclipse.cdt.dsf.gdb code=10004 Failed to execute MI command:
+-exec-next 1
+Error message from debugger back end:
+No se pueden encontrar límites en la función actual java.lang.Exception: No se pueden encontrar límites en la función actual' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2016-03-18 12:16:33.847
+!MESSAGE Failed to execute MI command:
+-exec-next 1
+Error message from debugger back end:
+No se pueden encontrar límites en la función actual
+!STACK 0
+java.lang.Exception: No se pueden encontrar límites en la función actual
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:927)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:756)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2016-03-18 12:19:55.557
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.debug.ui.viewmodel.SteppingController$3@4432e13): Status ERROR: org.eclipse.cdt.dsf.gdb code=10004 Failed to execute MI command:
+-exec-next 1
+Error message from debugger back end:
+No se pueden encontrar límites en la función actual java.lang.Exception: No se pueden encontrar límites en la función actual' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2016-03-18 12:19:55.557
+!MESSAGE Failed to execute MI command:
+-exec-next 1
+Error message from debugger back end:
+No se pueden encontrar límites en la función actual
+!STACK 0
+java.lang.Exception: No se pueden encontrar límites en la función actual
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:927)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:756)

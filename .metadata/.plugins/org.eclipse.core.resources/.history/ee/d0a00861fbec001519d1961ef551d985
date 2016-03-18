@@ -70,6 +70,9 @@ TPoro::~TPoro()
 		{
 			delete color;
 			color=NULL;
+		}else
+		{
+			color=NULL;
 		}
 }
 TPoro& TPoro::operator=(const TPoro &suPoro)

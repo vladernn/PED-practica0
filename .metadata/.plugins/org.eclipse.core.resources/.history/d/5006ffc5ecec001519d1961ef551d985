@@ -25,11 +25,8 @@ TListaNodo& TListaNodo::operator = (const TListaNodo & miNodo)
 }
 TListaNodo::~TListaNodo()
 {
-	if(this!=NULL)
-	{
-		this->anterior=NULL;
-		this->siguiente=NULL;
-	}
+	this->anterior=NULL;
+	this->siguiente=NULL;
 }
 
 TListaPosicion::TListaPosicion()
@@ -111,7 +108,7 @@ TListaPoro::~TListaPoro()
 		{
 			aux1=aux0;
 			aux0=aux0->siguiente;
-			delete aux1;
+			delete [] aux1;
 		}
 		this->primero=NULL;
 		this->ultimo=NULL;
