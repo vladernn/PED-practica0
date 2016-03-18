@@ -181,23 +181,20 @@ bool TListaPoro::Insertar(TPoro &poro)
 			aux0=this->primero;
 			while(aux0!=NULL and encontrado==false)
 			{
-				if(this->primero->e.Volumen() > poro.Volumen())
+				if(aux0->e.Volumen()<poro.Volumen()
+						and aux0->siguiente->e.Volumen() > poro.Volumen())
 				{
-					nodo->siguiente=aux0;
-					aux0->anterior=nodo;
-					this->primero=nodo;
-					this->ultimo=aux0;
-					//aux0->siguiente=nodo;
-					//nodo->anterior=aux0;
-					//nodo->siguiente->anterior=nodo;
+					nodo->siguiente=aux0->siguiente;
+					aux0->siguiente=nodo;
+					nodo->anterior=aux0;
+					nodo->siguiente->anterior=nodo;
+					encontrado=true;
+				}else if(this->primero->e.Volumen() > poro.Volumen())
+				{
+					nodo->siguiente=this->primero;
+					this->primero->anterior=nodo;
 					encontrado=true;
 				}else if(this->ultimo->e.Volumen() <= poro.Volumen())
-				{
-					nodo->anterior=this->primero;
-					this->primero->siguiente=nodo;
-					this->ultimo=nodo;
-					encontrado=true;
-				}else if(aux0->e.Volumen()<poro.Volumen()and aux0->siguiente->e.Volumen() > poro.Volumen())
 				{
 					nodo->anterior=this->ultimo;
 					this->ultimo->siguiente=nodo;

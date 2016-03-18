@@ -1,114 +1,111 @@
-11:20:40 **** Incremental Build of configuration Default for project poros-master ****
+14:26:03 **** Incremental Build of configuration Default for project poros-master ****
 make all 
-make: Nothing to be done for 'all'.
-11:20:42 **** Incremental Build of configuration Default for project poros-master ****
+g++ -g  -c -Iinclude -o lib/tlistaporo.o lib/tlistaporo.cpp
+lib/tlistaporo.cpp: In member function ‘bool TListaPoro::Insertar(TPoro&)’:
+lib/tlistaporo.cpp:217:7: error: cannot convert ‘TListaNodo**’ to ‘TListaNodo*’ in assignment
+   aux0=&nodo;
+       ^
+Makefile:12: recipe for target 'lib/tlistaporo.o' failed
+make: *** [lib/tlistaporo.o] Error 1
+14:26:09 **** Incremental Build of configuration Default for project poros-master ****
 make all 
-make: Nothing to be done for 'all'.
-11:20:51 **** Incremental Build of configuration Default for project poros-master ****
+g++ -g  -c -Iinclude -o lib/tlistaporo.o lib/tlistaporo.cpp
+lib/tlistaporo.cpp: In member function ‘bool TListaPoro::Insertar(TPoro&)’:
+lib/tlistaporo.cpp:217:7: error: cannot convert ‘TListaNodo**’ to ‘TListaNodo*’ in assignment
+   aux0=&nodo;
+Makefile:12: recipe for target 'lib/tlistaporo.o' failed
+       ^
+make: *** [lib/tlistaporo.o] Error 1
+14:26:31 **** Incremental Build of configuration Default for project poros-master ****
 make all 
-make: Nothing to be done for 'all'.
-11:21:23 **** Incremental Build of configuration Default for project poros-master ****
+g++ -g  -c -Iinclude -o lib/tlistaporo.o lib/tlistaporo.cpp
+lib/tlistaporo.cpp: In member function ‘bool TListaPoro::Insertar(TPoro&)’:
+lib/tlistaporo.cpp:217:7: error: cannot convert ‘TListaNodo**’ to ‘TListaNodo*’ in assignment
+   aux0=&nodo;
+       ^
+Makefile:12: recipe for target 'lib/tlistaporo.o' failed
+make: *** [lib/tlistaporo.o] Error 1
+14:26:57 **** Incremental Build of configuration Default for project poros-master ****
 make all 
-make: Nothing to be done for 'all'.
-11:23:15 **** Incremental Build of configuration Default for project poros-master ****
-make all 
+g++ -g  -c -Iinclude -o lib/tlistaporo.o lib/tlistaporo.cpp
 g++ -g  -Iinclude src/tad.cpp lib/tporo.o lib/tvectorporo.o lib/tlistaporo.o -o tad
-11:24:43 **** Incremental Build of configuration Default for project poros-master ****
-make all 
-g++ -g  -Iinclude src/tad.cpp lib/tporo.o lib/tvectorporo.o lib/tlistaporo.o -o tad
-11:26:23 **** Incremental Build of configuration Default for project poros-master ****
-make all 
-g++ -g  -Iinclude src/tad.cpp lib/tporo.o lib/tvectorporo.o lib/tlistaporo.o -o tad
-11:27:03 **** Incremental Build of configuration Default for project poros-master ****
-make all 
-make: Nothing to be done for 'all'.
-11:27:48 **** Incremental Build of configuration Default for project poros-master ****
-make all 
-make: Nothing to be done for 'all'.
-11:29:15 **** Incremental Build of configuration Default for project poros-master ****
-make all 
-make: Nothing to be done for 'all'.
-11:29:38 **** Incremental Build of configuration Default for project poros-master ****
-make all 
-make: Nothing to be done for 'all'.
-11:31:12 **** Incremental Build of configuration Default for project poros-master ****
-make all 
-make: Nothing to be done for 'all'.
-11:35:26 **** Incremental Build of configuration Default for project poros-master ****
+14:27:28 **** Incremental Build of configuration Default for project poros-master ****
 make all 
 g++ -g  -Iinclude src/tad.cpp lib/tporo.o lib/tvectorporo.o lib/tlistaporo.o -o tad
 src/tad.cpp: In function ‘int main()’:
-src/tad.cpp:10:25: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-   TPoro p(1, 1, 1,"rojo"), q(2, 2, 2), r(3, 3, 3);
-                         ^
-11:36:18 **** Incremental Build of configuration Default for project poros-master ****
-make all 
-make: Nothing to be done for 'all'.
-11:36:58 **** Incremental Build of configuration Default for project poros-master ****
-make all 
-make: Nothing to be done for 'all'.
-11:44:08 **** Incremental Build of configuration Default for project poros-master ****
-make all 
-make: Nothing to be done for 'all'.
-11:50:09 **** Incremental Build of configuration Default for project poros-master ****
-make all 
-g++ -g  -c -Iinclude -o lib/tporo.o lib/tporo.cpp
-g++ -g  -Iinclude src/tad.cpp lib/tporo.o lib/tvectorporo.o lib/tlistaporo.o -o tad
-src/tad.cpp: In function ‘int main()’:
-src/tad.cpp:10:25: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-   TPoro p(1, 1, 1,"rojo"), q(2, 2, 2), r(3, 3, 3);
-                         ^
-11:50:35 **** Incremental Build of configuration Default for project poros-master ****
-make all 
-make: Nothing to be done for 'all'.
-11:51:58 **** Incremental Build of configuration Default for project poros-master ****
+src/tad.cpp:15:11: error: ‘b’ was not declared in this scope
+   cout << b.Longitud() << endl;
+           ^
+Makefile:10: recipe for target 'tad' failed
+src/tad.cpp:16:11: error: ‘c’ was not declared in this scope
+   cout << c.Longitud() << endl;
+           ^
+make: *** [tad] Error 1
+14:27:52 **** Incremental Build of configuration Default for project poros-master ****
 make all 
 g++ -g  -Iinclude src/tad.cpp lib/tporo.o lib/tvectorporo.o lib/tlistaporo.o -o tad
-11:53:38 **** Incremental Build of configuration Default for project poros-master ****
+14:28:31 **** Incremental Build of configuration Default for project poros-master ****
 make all 
 make: Nothing to be done for 'all'.
-12:00:53 **** Incremental Build of configuration Default for project poros-master ****
+14:29:49 **** Incremental Build of configuration Default for project poros-master ****
 make all 
 make: Nothing to be done for 'all'.
-12:04:41 **** Incremental Build of configuration Default for project poros-master ****
+14:30:30 **** Incremental Build of configuration Default for project poros-master ****
+make all 
+g++ -g  -Iinclude src/tad.cpp lib/tporo.o lib/tvectorporo.o lib/tlistaporo.o -o tad
+14:31:19 **** Incremental Build of configuration Default for project poros-master ****
 make all 
 make: Nothing to be done for 'all'.
-12:06:05 **** Incremental Build of configuration Default for project poros-master ****
-make all 
-make: Nothing to be done for 'all'.
-12:16:27 **** Incremental Build of configuration Default for project poros-master ****
+14:37:04 **** Incremental Build of configuration Default for project poros-master ****
 make all 
 g++ -g  -c -Iinclude -o lib/tporo.o lib/tporo.cpp
 g++ -g  -c -Iinclude -o lib/tlistaporo.o lib/tlistaporo.cpp
 g++ -g  -Iinclude src/tad.cpp lib/tporo.o lib/tvectorporo.o lib/tlistaporo.o -o tad
-12:17:27 **** Incremental Build of configuration Default for project poros-master ****
+14:38:24 **** Incremental Build of configuration Default for project poros-master ****
 make all 
 make: Nothing to be done for 'all'.
-12:19:01 **** Incremental Build of configuration Default for project poros-master ****
-make all 
-g++ -g  -c -Iinclude -o lib/tporo.o lib/tporo.cpp
-g++ -g  -Iinclude src/tad.cpp lib/tporo.o lib/tvectorporo.o lib/tlistaporo.o -o tad
-12:21:54 **** Incremental Build of configuration Default for project poros-master ****
-make all 
-g++ -g  -c -Iinclude -o lib/tporo.o lib/tporo.cpp
-g++ -g  -Iinclude src/tad.cpp lib/tporo.o lib/tvectorporo.o lib/tlistaporo.o -o tad
-src/tad.cpp: In function ‘int main()’:
-src/tad.cpp:10:25: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-   TPoro p(1, 1, 1,"rojo"), q(2, 2, 2), r(3, 3, 3);
-                         ^
-12:29:38 **** Incremental Build of configuration Default for project poros-master ****
-make all 
-g++ -g  -Iinclude src/tad.cpp lib/tporo.o lib/tvectorporo.o lib/tlistaporo.o -o tad
-src/tad.cpp: In function ‘int main()’:
-src/tad.cpp:10:25: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-   TPoro p(1, 1, 1,"rojo"), q(2, 2, 2), r(3, 3, 3);
-                         ^
-12:30:54 **** Incremental Build of configuration Default for project poros-master ****
-make all 
-g++ -g  -Iinclude src/tad.cpp lib/tporo.o lib/tvectorporo.o lib/tlistaporo.o -o tad
-12:31:44 **** Incremental Build of configuration Default for project poros-master ****
+14:42:26 **** Incremental Build of configuration Default for project poros-master ****
 make all 
 make: Nothing to be done for 'all'.
-13:53:53 **** Incremental Build of configuration Default for project poros-master ****
+14:46:09 **** Incremental Build of configuration Default for project poros-master ****
 make all 
 make: Nothing to be done for 'all'.
+14:47:15 **** Incremental Build of configuration Default for project poros-master ****
+make all 
+make: Nothing to be done for 'all'.
+14:51:05 **** Incremental Build of configuration Default for project poros-master ****
+make all 
+make: Nothing to be done for 'all'.
+14:53:56 **** Incremental Build of configuration Default for project poros-master ****
+make all 
+g++ -g  -c -Iinclude -o lib/tlistaporo.o lib/tlistaporo.cpp
+g++ -g  -Iinclude src/tad.cpp lib/tporo.o lib/tvectorporo.o lib/tlistaporo.o -o tad
+14:54:23 **** Incremental Build of configuration Default for project poros-master ****
+make all 
+make: Nothing to be done for 'all'.
+16:02:36 **** Incremental Build of configuration Default for project poros-master ****
+make all 
+make: Nothing to be done for 'all'.
+16:06:58 **** Incremental Build of configuration Default for project poros-master ****
+make all 
+g++ -g  -Iinclude src/tad.cpp lib/tporo.o lib/tvectorporo.o lib/tlistaporo.o -o tad
+16:13:56 **** Incremental Build of configuration Default for project poros-master ****
+make all 
+g++ -g  -c -Iinclude -o lib/tlistaporo.o lib/tlistaporo.cpp
+g++ -g  -Iinclude src/tad.cpp lib/tporo.o lib/tvectorporo.o lib/tlistaporo.o -o tad
+16:17:33 **** Incremental Build of configuration Default for project poros-master ****
+make all 
+g++ -g  -Iinclude src/tad.cpp lib/tporo.o lib/tvectorporo.o lib/tlistaporo.o -o tad
+16:30:16 **** Incremental Build of configuration Default for project poros-master ****
+make all 
+make: Nothing to be done for 'all'.
+16:36:26 **** Incremental Build of configuration Default for project poros-master ****
+make all 
+g++ -g  -Iinclude src/tad.cpp lib/tporo.o lib/tvectorporo.o lib/tlistaporo.o -o tad
+16:38:56 **** Incremental Build of configuration Default for project poros-master ****
+make all 
+make: Nothing to be done for 'all'.
+16:44:46 **** Incremental Build of configuration Default for project poros-master ****
+make all 
+g++ -g  -c -Iinclude -o lib/tlistaporo.o lib/tlistaporo.cpp
+g++ -g  -Iinclude src/tad.cpp lib/tporo.o lib/tvectorporo.o lib/tlistaporo.o -o tad
