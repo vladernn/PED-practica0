@@ -33,6 +33,7 @@ public:
 class TListaPosicion
 {
 	friend class TListaPoro;
+	friend class TListaNodo;
 	private:
 		// Para implementar la POSICIÓN a NODO de la LISTA de TPoro
 		TListaNodo *pos;
@@ -47,25 +48,27 @@ class TListaPosicion
 		~TListaPosicion ();
 
 		// Sobrecarga del operador asignación
-		TListaPosicion& operator=( TListaPosicion &);
+		TListaPosicion& operator=(const TListaPosicion &);
 
 		// Sobrecarga del operador igualdad
-		bool operator==( TListaPosicion &);
+		bool operator==(const TListaPosicion &)const;
 
 		// Devuelve la posición anterior
 		TListaPosicion Anterior();
 
 		// Devuelve la posición siguiente
-		TListaPosicion Siguiente();
+		TListaPosicion Siguiente() const;
 
 		// Devuelve TRUE si la posición no apunta a una lista, FALSE en caso contrario
-		bool EsVacia();
+		bool EsVacia()const;
 };
 class TListaPoro
 {
+	friend class TListaNodo;
+	friend class TListaPosicion;
 
 	// Sobrecarga del operador salida
-	friend ostream & operator<<(ostream &, TListaPoro &);
+	friend ostream & operator<<(ostream &, const TListaPoro &);
 	private:
 		// Primer elemento de la lista
 		TListaNodo *primero;
@@ -87,7 +90,7 @@ class TListaPoro
 		TListaPoro & operator=( TListaPoro &);
 
 		// Sobrecarga del operador igualdad
-		bool operator==(TListaPoro &);
+		bool operator==(TListaPoro &)const;
 
 		// Sobrecarga del operador suma
 		TListaPoro operator+(TListaPoro &);
@@ -108,10 +111,10 @@ class TListaPoro
 		bool Borrar(TListaPosicion &);
 
 		// Obtiene el elemento que ocupa la posición indicada
-		TPoro Obtener(TListaPosicion &);
+		TPoro Obtener(const TListaPosicion &)const;
 
 		// Devuelve true si el elemento está en la lista, false en caso contrario
-		bool Buscar(TPoro &);
+		bool Buscar(const TPoro &)const;
 
 		// Devuelve la longitud de la lista
 		int Longitud()const;

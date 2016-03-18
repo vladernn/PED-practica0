@@ -1,7 +1,6 @@
-16:44:46 **** Incremental Build of configuration Default for project poros-master ****
+20:55:01 **** Incremental Build of configuration Default for project poros-master ****
 make all 
-g++ -g  -c -Iinclude -o lib/tlistaporo.o lib/tlistaporo.cpp
-g++ -g  -Iinclude src/tad.cpp lib/tporo.o lib/tvectorporo.o lib/tlistaporo.o -o tad
+make: Nothing to be done for 'all'.
 
-16:44:47 Build Finished (took 802ms)
+20:55:01 Build Finished (took 98ms)
 
